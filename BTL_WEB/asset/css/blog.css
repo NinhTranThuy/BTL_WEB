@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+    nav ul {
+        list-style: none;
+        height: 100%;
+    }
+
+        nav ul li a {
+            height: 100%;
+            margin: 0 20px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+ul .hover-effect :hover {
+    background-color: #f2f2f1;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+    .left-nav ul {
+        display: flex;
+    }
+
+        .left-nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+.right-nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .right-nav ul {
+        display: flex;
+    }
+
+        .right-nav ul li button:focus {
+            outline: none;
+        }
+
+        .right-nav ul li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .right-nav ul li img {
+            width: 15px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .right-nav ul li .imgBooking {
+            width: 25px;
+            height: auto;
+            filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(93%) contrast(100%);
+        }
+
+#signout {
+    margin-left: 10px;
+}
+
+    #signout:hover {
+        text-decoration: underline;
+    }
+/*content*/
+/* CSS cho phần tin tức */
+/* CSS cho phần tin tức */
+.news-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+    .news-list .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-list .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .news-list .title h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .news-list .title p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+    .news-list .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .news-list .content-container {
+        display: flex;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+        .news-list .content-container:hover {
+            transform: scale(1.02);
+        }
+
+        .news-list .content-container img.thumbnail-ava {
+            width: 300px;
+            padding: 5px;
+            object-fit: cover;
+        }
+
+        .news-list .content-container .detail {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+            .news-list .content-container .detail #post-date {
+                font-size: 0.9rem;
+                color: #999;
+                margin-bottom: 5px;
+            }
+
+            .news-list .content-container .detail h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .news-list .content-container .detail p {
+                font-size: 1rem;
+                color: #333;
+            }
+
+.btn-view-more {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-view-more:hover {
+        background-color: #0056b3;
+    }
+/* CSS cho trang chi tiết tin tức */
+.news-detail {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+    .news-detail .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .news-detail .title {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+        .news-detail .title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+    .news-detail .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-detail .thumbnail {
+        width: calc(100% - 20px); /* Trừ bớt khoảng cách padding */
+        height: auto;
+        margin: 10px; /* Cách các cạnh mỗi bên một ít */
+        border-radius: 5px;
+    }
+
+    .news-detail .detail {
+        padding: 20px;
+    }
+
+        .news-detail .detail #post-date {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .news-detail .detail h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .news-detail .detail p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+/* Footer */
+footer {
+    background-color: #171717;
+    color: white;
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h4, p {
+    margin: 10px;
+}
+
+.col-descrip img {
+    width: 100px;
+}
+
+.col-link {
+    margin: 0 100px;
+}
+
+    .col-link ul {
+        list-style: none;
+        margin: 10px;
+    }
+
+.footer-mark {
+    margin-top: 10px;
+}
+
+.col-link .footer-mark a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s ease-in-out;
+}
+
+    .col-link .footer-mark a:hover {
+        font-size: 18px;
+    }
+
+footer > p {
+    margin: 20px 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}

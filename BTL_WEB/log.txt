@@ -1,0 +1,9 @@
+23/11/2024 11:58:59 CH: System.Collections.Generic.List`1[BTL_WEB.Class.User]
+24/11/2024 12:00:10 SA: System.Collections.Generic.List`1[BTL_WEB.Class.User]
+24/11/2024 12:00:11 SA: System.Collections.Generic.List`1[BTL_WEB.Class.User]
+System.Collections.Generic.List`1[BTL_WEB.Class.User]
+System.Collections.Generic.List`1[BTL_WEB.Class.User]
+Số lượng người dùng: 4
+Số lượng người dùng: 4
+Số lượng người dùng: 4
+Số lượng người dùng: 4
